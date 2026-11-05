@@ -1,0 +1,54 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/about", "destination": "/", "permanent": true },
+    { "source": "/contact", "destination": "/", "permanent": true },
+    { "source": "/business-areas", "destination": "/", "permanent": true },
+    { "source": "/twb-ventures", "destination": "/", "permanent": true },
+    { "source": "/brand-accelerator", "destination": "/", "permanent": true },
+    { "source": "/business-automation", "destination": "/", "permanent": true },
+    { "source": "/financial-hub", "destination": "/", "permanent": true },
+    { "source": "/electric-monday", "destination": "/", "permanent": true },
+    { "source": "/gsd", "destination": "/", "permanent": true },
+    { "source": "/peepersfrank", "destination": "/", "permanent": true },
+    { "source": "/work-studio", "destination": "/", "permanent": true },
+    { "source": "/sustainability-policy", "destination": "https://www.danskdesigninvest.dk/baeredygtighedspolitik", "permanent": true },
+    { "source": "/esg", "destination": "https://www.danskdesigninvest.dk/etiske-retningslinjer", "permanent": true },
+    { "source": "/sitemap.html", "destination": "/", "permanent": true },
+    { "source": "/page-sitemap.html", "destination": "/", "permanent": true },
+    { "source": "/sitemap-misc.html", "destination": "/", "permanent": true },
+    { "source": "/page-sitemap.xml", "destination": "/sitemap.xml", "permanent": true },
+    { "source": "/sitemap-misc.xml", "destination": "/sitemap.xml", "permanent": true },
+    { "source": "/wp-sitemap.xml", "destination": "/sitemap.xml", "permanent": true },
+    { "source": "/feed", "destination": "/", "permanent": true },
+    { "source": "/feed/:path*", "destination": "/", "permanent": true },
+    { "source": "/comments/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-content/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-includes/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-json/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-admin/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-login.php", "destination": "/", "permanent": true },
+    { "source": "/xmlrpc.php", "destination": "/", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'none'" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}
