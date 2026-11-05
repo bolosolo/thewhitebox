@@ -1,0 +1,268 @@
+# DNS records observed 2026-11-05 ~13:50 UTC via nslookup (public resolver)
+# State during the switch: apex .com, apex .dk and www .dk already point to Vercel; www .com still points to WP Engine.
+# Never change MX, SPF, DKIM, DMARC, autodiscover or other mail/verification records.
+
+## thewhitebox.com  (A)
+Name:    thewhitebox.com
+Address:  216.150.1.1
+
+## thewhitebox.com  (MX)
+thewhitebox.com	MX preference = 0, mail exchanger = thewhitebox-com.mail.protection.outlook.com
+
+## thewhitebox.com  (TXT)
+thewhitebox.com	text =
+	"MS=ms56087585"
+thewhitebox.com	text =
+	"v=spf1 include:spf.protection.outlook.com -all"
+
+## thewhitebox.com  (NS)
+thewhitebox.com	nameserver = ns01.one.com
+thewhitebox.com	nameserver = ns02.one.com
+ns01.one.com	internet address = 195.206.121.10
+ns02.one.com	internet address = 185.10.11.10
+ns01.one.com	AAAA IPv6 address = 2001:67c:28cc::10
+ns02.one.com	AAAA IPv6 address = 2001:67c:3c0::10
+
+## www.thewhitebox.com  (A)
+Name:    wp.wpenginepowered.com
+Addresses:  141.193.213.10
+	  141.193.213.11
+Aliases:  www.thewhitebox.com
+
+## www.thewhitebox.com  (CNAME)
+www.thewhitebox.com	canonical name = wp.wpenginepowered.com
+
+## www.thewhitebox.com  (MX)
+www.thewhitebox.com	canonical name = wp.wpenginepowered.com
+wpenginepowered.com
+	primary name server = darwin.ns.cloudflare.com
+	responsible mail addr = dns.cloudflare.com
+	serial  = 2419369154
+	refresh = 10000 (2 hours 46 mins 40 secs)
+	retry   = 2400 (40 mins)
+	expire  = 604800 (7 days)
+	default TTL = 1800 (30 mins)
+
+## www.thewhitebox.com  (TXT)
+www.thewhitebox.com	canonical name = wp.wpenginepowered.com
+wpenginepowered.com
+	primary name server = darwin.ns.cloudflare.com
+	responsible mail addr = dns.cloudflare.com
+	serial  = 2419369154
+	refresh = 10000 (2 hours 46 mins 40 secs)
+	retry   = 2400 (40 mins)
+	expire  = 604800 (7 days)
+	default TTL = 1800 (30 mins)
+
+## www.thewhitebox.com  (NS)
+www.thewhitebox.com	canonical name = wp.wpenginepowered.com
+wpenginepowered.com
+	primary name server = darwin.ns.cloudflare.com
+	responsible mail addr = dns.cloudflare.com
+	serial  = 2419367615
+	refresh = 10000 (2 hours 46 mins 40 secs)
+	retry   = 2400 (40 mins)
+	expire  = 604800 (7 days)
+	default TTL = 1800 (30 mins)
+
+## thewhitebox.dk  (A)
+Name:    thewhitebox.dk
+Address:  216.150.1.1
+
+## thewhitebox.dk  (MX)
+thewhitebox.dk	MX preference = 0, mail exchanger = thewhitebox-dk.mail.protection.outlook.com
+
+## thewhitebox.dk  (TXT)
+thewhitebox.dk	text =
+	"v=spf1 include:spf.protection.outlook.com -all"
+thewhitebox.dk	text =
+	"MS=ms53158735"
+thewhitebox.dk	text =
+	"google-site-verification=DA09oPqNXPQU-SMcc4lssQV9nc1u7ooDKGYtq0TSDvo"
+thewhitebox.dk	text =
+	"facebook-domain-verification=ieydubpn6kwza4pu4gny6o8c3mwwr5"
+
+## thewhitebox.dk  (NS)
+thewhitebox.dk	nameserver = ns01.one.com
+thewhitebox.dk	nameserver = ns02.one.com
+ns01.one.com	internet address = 195.206.121.10
+ns02.one.com	internet address = 185.10.11.10
+ns01.one.com	AAAA IPv6 address = 2001:67c:28cc::10
+ns02.one.com	AAAA IPv6 address = 2001:67c:3c0::10
+
+## www.thewhitebox.dk  (A)
+Name:    31648cebbfb1b623.vercel-dns-016.com
+Addresses:  216.150.1.65
+	  216.150.16.65
+Aliases:  www.thewhitebox.dk
+
+## www.thewhitebox.dk  (CNAME)
+www.thewhitebox.dk	canonical name = 31648cebbfb1b623.vercel-dns-016.com
+
+## www.thewhitebox.dk  (MX)
+www.thewhitebox.dk	canonical name = 31648cebbfb1b623.vercel-dns-016.com
+vercel-dns-016.com
+	primary name server = ns1.vercel-dns-016.com
+	responsible mail addr = awsdns-hostmaster.amazon.com
+	serial  = 1
+	refresh = 3600 (1 hour)
+	retry   = 900 (15 mins)
+	expire  = 1209600 (14 days)
+	default TTL = 900 (15 mins)
+
+## www.thewhitebox.dk  (TXT)
+www.thewhitebox.dk	canonical name = 31648cebbfb1b623.vercel-dns-016.com
+vercel-dns-016.com
+	primary name server = ns1.vercel-dns-016.com
+	responsible mail addr = awsdns-hostmaster.amazon.com
+	serial  = 1
+	refresh = 3600 (1 hour)
+	retry   = 900 (15 mins)
+	expire  = 1209600 (14 days)
+	default TTL = 900 (15 mins)
+
+## www.thewhitebox.dk  (NS)
+www.thewhitebox.dk	canonical name = 31648cebbfb1b623.vercel-dns-016.com
+vercel-dns-016.com
+	primary name server = ns1.vercel-dns-016.com
+	responsible mail addr = awsdns-hostmaster.amazon.com
+	serial  = 1
+	refresh = 3600 (1 hour)
+	retry   = 900 (15 mins)
+	expire  = 1209600 (14 days)
+	default TTL = 900 (15 mins)
+
+## autodiscover.thewhitebox.com  (A)
+Name:    autod.ms-acdc-autod.office.com
+Addresses:  40.104.116.24
+	  40.104.116.56
+	  40.104.116.8
+	  40.104.116.40
+Aliases:  autodiscover.thewhitebox.com
+	  autodiscover.outlook.com
+	  autodiscover.outlook.cloud.microsoft
+	  acdcatm.autodiscover.mira.tm.svc.cloud.microsoft
+
+## autodiscover.thewhitebox.com  (AAAA)
+Name:    atm.autodiscover.mira.tm.svc.cloud.microsoft
+Addresses:  2603:1026:9:800::8
+	  2603:1026:9::8
+	  2603:1026:9:400::8
+	  2603:1026:9:401::8
+Aliases:  autodiscover.thewhitebox.com
+	  autodiscover.outlook.com
+	  autodiscover.outlook.cloud.microsoft
+	  acdcatm.autodiscover.mira.tm.svc.cloud.microsoft
+
+## autodiscover.thewhitebox.com  (CNAME)
+autodiscover.thewhitebox.com	canonical name = autodiscover.outlook.com
+
+## autodiscover.thewhitebox.com  (MX)
+autodiscover.thewhitebox.com	canonical name = autodiscover.outlook.com
+autodiscover.outlook.com	canonical name = autodiscover.outlook.cloud.microsoft
+autodiscover.outlook.cloud.microsoft	canonical name = acdcatm.autodiscover.mira.tm.svc.cloud.microsoft
+acdcatm.autodiscover.mira.tm.svc.cloud.microsoft	canonical name = autod.ms-acdc-autod.office.com
+ms-acdc-autod.office.com
+	primary name server = ns1-ms-acdc.office.com
+	responsible mail addr = hostmaster.microsoft.com
+	serial  = 2026140851
+	refresh = 900 (15 mins)
+	retry   = 600 (10 mins)
+	expire  = 86400 (1 day)
+	default TTL = 60 (1 min)
+
+## autodiscover.thewhitebox.com  (TXT)
+autodiscover.thewhitebox.com	canonical name = autodiscover.outlook.com
+autodiscover.outlook.com	canonical name = autodiscover.outlook.cloud.microsoft
+autodiscover.outlook.cloud.microsoft	canonical name = acdcatm.autodiscover.mira.tm.svc.cloud.microsoft
+acdcatm.autodiscover.mira.tm.svc.cloud.microsoft	canonical name = autod.ms-acdc-autod.office.com
+ms-acdc-autod.office.com
+	primary name server = ns1-ms-acdc.office.com
+	responsible mail addr = hostmaster.microsoft.com
+	serial  = 2026139607
+	refresh = 900 (15 mins)
+	retry   = 600 (10 mins)
+	expire  = 86400 (1 day)
+	default TTL = 60 (1 min)
+
+## autodiscover.thewhitebox.com  (NS)
+autodiscover.thewhitebox.com	canonical name = autodiscover.outlook.com
+autodiscover.outlook.com	canonical name = autodiscover.outlook.cloud.microsoft
+autodiscover.outlook.cloud.microsoft	canonical name = acdcatm.autodiscover.mira.tm.svc.cloud.microsoft
+acdcatm.autodiscover.mira.tm.svc.cloud.microsoft	canonical name = atm.autodiscover.mira.tm.svc.cloud.microsoft
+cloud.microsoft
+	primary name server = ns1-33.azure-dns.com
+	responsible mail addr = azuredns-hostmaster.microsoft.com
+	serial  = 1
+	refresh = 3600 (1 hour)
+	retry   = 120 (2 mins)
+	expire  = 2419200 (28 days)
+	default TTL = 60 (1 min)
+
+## autodiscover.thewhitebox.dk  (A)
+Name:    autod.ms-acdc-autod.office.com
+Addresses:  40.104.116.24
+	  40.104.116.56
+	  40.104.116.8
+	  40.104.116.40
+Aliases:  autodiscover.thewhitebox.dk
+	  autodiscover.outlook.com
+	  autodiscover.outlook.cloud.microsoft
+	  acdcatm.autodiscover.mira.tm.svc.cloud.microsoft
+
+## autodiscover.thewhitebox.dk  (AAAA)
+Name:    atm.autodiscover.mira.tm.svc.cloud.microsoft
+Addresses:  2603:1026:9:401::8
+	  2603:1026:9::8
+	  2603:1026:9:400::8
+	  2603:1026:9:800::8
+Aliases:  autodiscover.thewhitebox.dk
+	  autodiscover.outlook.com
+	  autodiscover.outlook.cloud.microsoft
+	  acdcatm.autodiscover.mira.tm.svc.cloud.microsoft
+
+## autodiscover.thewhitebox.dk  (CNAME)
+autodiscover.thewhitebox.dk	canonical name = autodiscover.outlook.com
+
+## autodiscover.thewhitebox.dk  (MX)
+autodiscover.thewhitebox.dk	canonical name = autodiscover.outlook.com
+autodiscover.outlook.com	canonical name = autodiscover.outlook.cloud.microsoft
+autodiscover.outlook.cloud.microsoft	canonical name = acdcatm.autodiscover.mira.tm.svc.cloud.microsoft
+acdcatm.autodiscover.mira.tm.svc.cloud.microsoft	canonical name = autod.ms-acdc-autod.office.com
+ms-acdc-autod.office.com
+	primary name server = ns1-ms-acdc.office.com
+	responsible mail addr = hostmaster.microsoft.com
+	serial  = 2026140851
+	refresh = 900 (15 mins)
+	retry   = 600 (10 mins)
+	expire  = 86400 (1 day)
+	default TTL = 60 (1 min)
+
+## autodiscover.thewhitebox.dk  (TXT)
+autodiscover.thewhitebox.dk	canonical name = autodiscover.outlook.com
+autodiscover.outlook.com	canonical name = autodiscover.outlook.cloud.microsoft
+autodiscover.outlook.cloud.microsoft	canonical name = acdcatm.autodiscover.mira.tm.svc.cloud.microsoft
+acdcatm.autodiscover.mira.tm.svc.cloud.microsoft	canonical name = atm.autodiscover.mira.tm.svc.cloud.microsoft
+cloud.microsoft
+	primary name server = ns1-33.azure-dns.com
+	responsible mail addr = azuredns-hostmaster.microsoft.com
+	serial  = 1
+	refresh = 3600 (1 hour)
+	retry   = 120 (2 mins)
+	expire  = 2419200 (28 days)
+	default TTL = 60 (1 min)
+
+## autodiscover.thewhitebox.dk  (NS)
+autodiscover.thewhitebox.dk	canonical name = autodiscover.outlook.com
+autodiscover.outlook.com	canonical name = autodiscover.outlook.cloud.microsoft
+autodiscover.outlook.cloud.microsoft	canonical name = acdcatm.autodiscover.mira.tm.svc.cloud.microsoft
+acdcatm.autodiscover.mira.tm.svc.cloud.microsoft	canonical name = atm.autodiscover.mira.tm.svc.cloud.microsoft
+cloud.microsoft
+	primary name server = ns1-33.azure-dns.com
+	responsible mail addr = azuredns-hostmaster.microsoft.com
+	serial  = 1
+	refresh = 3600 (1 hour)
+	retry   = 120 (2 mins)
+	expire  = 2419200 (28 days)
+	default TTL = 60 (1 min)
+
